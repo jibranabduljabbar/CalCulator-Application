@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalCulator AppliCation</title>
+</head>
+<body>
+
+    <h1  onmouseover="this.style.backgroundColor='wheat',this.style.color='green'" onmouseout="this.style.backgroundColor='green',this.style.color='white'" style="border-radius: 20px; margin-left: 100px; text-align: center; color: white; font-style: oblique; margin-right: 100px; margin-top: 300px; font-weight: 100; font-size: 30px; background-color: green;">"CalCulator AppliCation"</h1>
+    
+
+    <div style="background-color: grey; margin-left: 544px; text-align: center; border-radius: 10px; margin-right: 535px;">
+  
+      <div>
+            <br>
+            <input onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='white',this.style.color='black'" style="width: 117px; margin-left: -43px; margin-right: 5px; height: 30px; border-radius: 10px;"  type="text" name="input" id="input">
+        <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 0, 0, 0.863)',this.style.color='white'"  style="margin-right: -45px;width: 40px; height: 30px; border-radius: 10px; background-color: rgba(255, 0, 0, 0.863) ;color: white;" onclick="clearValue()">x</button>
+        </div>
+        <br>
+        <div>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(7)">7</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(8)">8</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(9)">9</button>
+            <button onmouseover="this.style.backgroundColor='blue',this.style.color='white'" onmouseout="this.style.backgroundColor='rgb(92, 43, 226)',this.style.color='white'" style="width: 40px; height: 30px; border-radius: 10px; background-color: rgb(92, 43, 226);" onclick="getValue('/')"> <!-- <img src="https://www.kindpng.com/picc/m/128-1282639_division-sign-division-symbol-hd-png-download.png" width="10px" height="10px" alt="">--> / </button>
+        </div>
+        <br>
+        <div>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(4)">4</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(5)">5</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(6)">6</button>
+            <button onmouseover="this.style.backgroundColor='blue',this.style.color='white'" onmouseout="this.style.backgroundColor='rgb(92, 43, 226)',this.style.color='white'" style="font-size: 20px; width: 40px; height: 30px; border-radius: 10px; background-color: rgb(92, 43, 226); color: black;" onclick="getValue('*')">* </button>
+        </div>
+        <br>
+        <div>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(1)">1</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(2)">2</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(3)">3</button>
+            <button onmouseover="this.style.backgroundColor='blue',this.style.color='white'" onmouseout="this.style.backgroundColor='rgb(92, 43, 226)',this.style.color='white'" style="width: 40px; height: 30px; border-radius: 10px; background-color: rgb(92, 43, 226);" onclick="getValue('-')">-</button>
+        </div>
+        <br>
+        <div>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue(0)">0</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue('.')">.</button>
+            <button onmouseover="this.style.backgroundColor='black',this.style.color='white'" onmouseout="this.style.backgroundColor='#EFEFEF',this.style.color='black'" style="width: 40px; height: 30px; border-radius: 10px;" onclick="getValue('00')">00</button>
+            <button onmouseover="this.style.backgroundColor='blue',this.style.color='white'" onmouseout="this.style.backgroundColor='rgb(92, 43, 226)',this.style.color='white'" style="background-color: rgb(92, 43, 226); width: 40px; height: 30px; border-radius: 10px;" onclick="getValue('+')">+</button>
+            <button onmouseover="this.style.backgroundColor='Yellow',this.style.color='black'" onmouseout="this.style.backgroundColor='rgb(64, 255, 47)',this.style.color='grey'" style="margin-top: 20px; width: 175px; height: 30px; border-radius: 10px; color: grey; background-color: rgb(64, 255, 47);" onclick="getCompleteValue()">=</button>
+        </div>
+        <br>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
